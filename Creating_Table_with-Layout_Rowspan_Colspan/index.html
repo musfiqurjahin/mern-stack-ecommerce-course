@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Tables with Layout, Rowspan and Colspan</title>
+</head>
+<style>
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td{
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 10px;
+
+    }
+    tr:nth-child(even){
+        background-color: rgba(0, 0, 0, 0.171);
+    }
+</style>
+
+<body>
+
+    <h1> Creating Tables with Layout, Rowspan and Colspan</h1>
+
+    <h2>Simple table:</h2>
+    <table border="1">
+        <tr>
+            <th>Column-1</th>
+            <th>Column-2</th>
+            <th>Column-3</th>
+            <th>Column-4</th>
+        </tr>
+
+        <tr>
+            <td>Data-1</td>
+            <td>Data-2</td>
+            <td>Data-3</td>
+            <td>Data-4</td>
+        </tr>
+
+        <tr>
+            <td>Data-5</td>
+            <td>Data-6</td>
+            <td>Data-7</td>
+            <td>Data-8</td>
+        </tr>
+
+        <tr>
+            <td>Data-9</td>
+            <td>Data-10</td>
+            <td>Data-11</td>
+            <td>Data-12</td>
+        </tr>
+
+        <tr>
+            <td>Data-13</td>
+            <td>Data-14</td>
+            <td>Data-15</td>
+            <td>Data-16</td>
+        </tr>
+    </table>
+
+    <h2>Practical project:</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Sex</th>
+            <th>Birth Month</th>
+            <th>Birth Day</th>
+            <th>Birth Year</th>
+        </tr>
+
+        <tr>
+            <td>Musfiqur Jahin</td>
+            <td>21</td>
+            <td>Male</td>
+            <td>May</td>
+            <td>23</td>
+            <td>2004</td>
+        </tr>
+
+        <tr>
+            <td>Md Sadiqul Islam</td>
+            <td>20</td>
+            <td>Male</td>
+            <td>March</td>
+            <td>25</td>
+            <td>2006</td>
+        </tr>
+
+        <tr>
+            <td>Anonymous</td>
+            <td>Undefinied</td>
+            <td>Undefinied</td>
+            <td>Undefinied</td>
+            <td>Undefinied</td>
+            <td>Undefinied</td>
+        </tr>
+    </table>
+
+
+    <h2>Using rowspan and colspan</h2>
+    <table>
+        <tr>
+            <th rowspan="2">Header-1</th>
+            <th colspan="2">Header-2</th>
+        </tr>
+
+        <tr>
+            <th>Subheader-1</th>
+            <th>Subheader-2</th>
+        </tr>
+
+        <tr>
+            <td>Data-1</td>
+            <td>Data-2 takes 2 columns</td>
+        </tr>
+
+        <tr>
+            <td>Data-3</td>
+            <td>Data-4</td>
+            <td>Data-5</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
