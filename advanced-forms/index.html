@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Form Elements</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+
+        label,
+        textarea,
+        input,
+        select,
+        option {
+            display: block;
+            margin: 10px 0;
+        }
+
+        div {
+            display: grid;
+            place-items: center;
+            /* vertical + horizontal */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; text-decoration: underline;">Advanced Form Elements:</h1>
+    <div style="height: 100px;"></div>
+
+    <!-- Contact Form -->
+    <div>
+        <h2>Contact form:</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name here">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email here">
+
+        <label for="message">Write message:</label>
+        <textarea name="message" id="message" placeholder="Enter your message here" rows="5" cols="25"></textarea>
+
+        <input type="submit" value="Submit">
+
+    </div>
+    <div style="height: 100px;"></div>
+
+    <!--Select elements-->
+    <div>
+        <h2 style="text-align: left; text-decoration: underline;">Select menu dropdown:</h2>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="">Select your Country</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Iran">Iran</option>
+            <option value="Saudi Arab">Saudi Arab</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Palestine">Palestine</option>
+            <option value="Switzerland">Switzerland</option>
+        </select>
+    </div>
+
+    <div style="height: 50px;"></div>
+    <!--Radio buttons and Checkbox-->
+    <div>
+        <h2 style="text-decoration: underline;">Radio butons and checkbox:</h2>
+
+    </div>
+
+</body>
+
+</html>
