@@ -1,0 +1,9 @@
+html{
+    background-color: rgba(255, 221, 0, 0.808);
+    color: black;
+    font-style:italic ;
+    font-size: 3vw;
+    display: block;
+    text-align: center;
+    margin: 10vw;
+}
