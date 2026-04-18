@@ -1,0 +1,53 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 2px solid tomato;
+    width: 300px;
+    height: 150px;
+    margin-bottom: 24px;
+    line-height: 150px; /* vertically center ante*/
+}
+
+.responsive-box{
+    width: 100%;
+    max-width: 500px; 
+    min-width: 200px;
+    background-color: lightgreen;
+    padding: 20px;
+    border: 2px solid #333;
+    text-align: center;
+}
+
+.height-box{
+    width: 100%;
+    background-color: lightcoral;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #333;
+    text-align: center;
+    max-height: 450px;
+    min-height: 150px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.overflow-box{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(237, 138, 255);
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.overflow-box img {
+    width: 100%;
+    height: auto;
+}

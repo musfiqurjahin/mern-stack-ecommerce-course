@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 15px;
+}
+
+.block {
+  background-color: lightblue;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.inline {
+  background: lightgreen;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: inline;
+  margin-right: 15px;
+}
+
+.inline-block{
+    background: lightcoral;
+    padding: 10px 20px;
+    margin-right: 10px;
+    width: 150px;
+    display: inline-block;
+}
+
+.visible{
+    background-color: blueviolet;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.hidden{
+    background-color: darkorange;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.hidden-visibility{
+    background-color: aquamarine;
+    padding: 20px;
+    margin-bottom: 10px;
+    visibility: hidden;
+}
+
+.opacity{
+    background: #000;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: white;
+    opacity: 0;
+}
+
+/* practical nav bar  */
+.nav{
+    background: #333;
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav-item{
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+

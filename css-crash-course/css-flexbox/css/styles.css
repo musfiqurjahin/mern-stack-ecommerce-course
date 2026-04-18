@@ -1,0 +1,86 @@
+.container{
+    border: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item, .item1{
+    background-color: lightcoral;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.container-justify{
+    border: 2px solid #3d43f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* 
+ justify-content:
+  1. flex-start
+  2. flex-end
+  3. center
+  4. space-between
+  5. space-around
+  6. space-evenly
+
+*/
+
+.container-align{
+    border: 2px solid #00ff2f;
+    padding: 20px;
+    display: flex;
+    align-items: stretch; /*vertically*/
+    height: 200px;
+    justify-content: space-between; /* horizontaly */
+}
+
+/* 
+ align-items:
+ 1. flex-start (default)
+ 2. flex-end
+ 3. center
+ 4. baseline
+ 5. stretch
+*/
+
+.container-direction{
+    border: 2px solid #ff00e1;
+    padding: 20px;
+    display: flex;
+    height: 300px;
+    flex-direction: column-reverse;
+}
+
+/* 
+ flex-direction:
+  1. column (vertically)
+  2. row (horizontally) -default
+  3. row-reverse
+  4. column-reverse
+*/
+
+.container-wrap{
+    border: 2px solid #5500ff;
+    padding: 20px;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    /* overflow: hidden; */
+}
+
+.item1{
+    width: 100px;
+}
+
+/* 
+  flex-wrap:
+  1. nowrap (default)
+  2. wrap (create new line for spacing)
+  3. wrap-reverse (create new line for spacing in reverse order)
+*/

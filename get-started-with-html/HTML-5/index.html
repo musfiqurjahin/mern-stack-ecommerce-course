@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5 New Features</title>
+</head>
+
+<body>
+
+    <h1>HTML-5 New Features</h1>
+
+    <!--Step-1 Figure and FigCaption tags -->
+    <!-- <img width="500" src="https://imgs.search.brave.com/EV0tfCVoz5v_8BYyhEHcVNxzLx4O1d4a_Spl4PDYfBI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9iYWNr/aWVlLmNvbS9zdGF0/aWMvd2FsbHBhcGVy/cy80NTZ4MjU3LzI4/OTY0Ni5qcGc" alt="Hello World">
+     -->
+
+    <figure>
+        <img width="500"
+            src="https://imgs.search.brave.com/EV0tfCVoz5v_8BYyhEHcVNxzLx4O1d4a_Spl4PDYfBI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9iYWNr/aWVlLmNvbS9zdGF0/aWMvd2FsbHBhcGVy/cy80NTZ4MjU3LzI4/OTY0Ni5qcGc"
+            alt="Hello World">
+        <figcaption>Image of scenario</figcaption>
+    </figure>
+
+
+    <!--Step-2 Time element -->
+    <!-- <p>Our next event is on 23rd May 2026</p> -->
+    <p>Our next event is on <time datetime="2026-05-23">May 23rd 2026</time></p>
+
+
+    <!--Step-3 Mark element -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, consequatur deserunt tempore aliquid debitis quae
+        culpa quisquam optio id, ipsam libero sed asperiores obcaecati! Voluptatum perferendis necessitatibus eum odit
+        eos, molestias iusto harum unde odio. Quidem id, quod repellendus itaque est aliquam architecto quibusdam
+        veniam, voluptatem reprehenderit eveniet rerum ad temporibus. Et nemo ut voluptates dignissimos earum sed
+        repellendus dicta atque eveniet perspiciatis consectetur cum mollitia animi, repellat hic unde tempora,
+        praesentium obcaecati? Blanditiis quae architecto, laboriosam sunt nulla dolorem enim eos alias similique,
+        perferendis obcaecati quas cumque fuga fugiat, vero delectus ipsam! Voluptatum excepturi laborum unde cumque
+        harum quod! Vero cupiditate fugit exercitationem.<mark>Musfiqur Jahin</mark> Delectus quibusdam odio deleniti suscipit, expedita magni
+        reiciendis modi placeat similique a nesciunt qui aut distinctio earum. Quam adipisci facere consequuntur numquam
+        ut, doloribus culpa recusandae nobis quis eum animi fuga eos natus? Nisi, officia? Pariatur fugiat ullam
+        perferendis consectetur officia rem iure autem adipisci illum eum, tenetur numquam, recusandae cum ad, odio in!
+        Quia, inventore cupiditate magni laudantium reiciendis delectus. Optio ratione similique asperiores eius numquam
+        incidunt corporis repellendus voluptas laboriosam! Quis qui blanditiis molestiae quos modi quas officia ea
+        adipisci. Consectetur dolor illum suscipit assumenda! Fugiat sed culpa esse quidem nobis expedita maiores
+        provident.</p>
+
+        <!-- Step-4 canvas element -->
+         <canvas style="border: 2px solid green;" id="mycanvas" width="400" height="300"></canvas>
+
+         <script>
+            const canvas = document.getElementById("mycanvas");
+            const ctx = canvas.getContext("2d");
+
+            // Draw Background
+            ctx.fillStyle = "blue";
+            ctx.fillRect(50,50,100,50);
+
+            // Draw circle
+            ctx.beginPath();
+            ctx.arc(200,100,40,0,Math.PI*2,false);
+            ctx.fillStyle="red";
+            ctx.fill();
+         </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+#hex-color{
+    color: #3498db;
+}
+
+/* 
+0-9
+A-F
+*/
+
+#rgb-color{
+    color: rgb(255, 99, 71)
+}
+
+#hsl-color{
+    color: hsl(250, 100%, 51%);
+}
+
+/* 
+hue: 0-360 degrees
+saturation: 0-100%
+lightness: 0-100%
+*/
+
+.heading1{
+    color: #ff6347;
+}
+
+.example-content{
+    background-color: #123dca;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.bg-banner{
+    background-image: url("../images/background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    padding: 20px;
+}
+
+.multiple-images{
+    background-image: url("../images/background-image.jpg"), url("../images/sunset-forest-4k-pc.jpg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain ;
+    padding: 20px;
+    height: 500px;
+}
+
+.linear-gradient{
+    background: linear-gradient(to left, #ff7e5f, #0272fb);
+    padding: 50px;
+}
+
+.radial-gradient{
+ 
+    height: 450px;
+    width: 450px;
+    background: radial-gradient(circle, #ff7e5f, #003ef8);
+}

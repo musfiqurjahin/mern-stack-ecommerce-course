@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+
+header{
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+section{
+    margin: 50px 20px;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* 
+@media (condition) {
+  CSS Style to apply
+} 
+
+2. Breakpoints for Different Screen Sizes
+   - Mobile: up to 480px (portrait)
+   - Tablet: 481px - 768px
+   - Desktop: 769px and above
+
+*/
+
+
+
+/* Media Queries */
+
+/* For devices with screen width up to 480px (Mobile) */
+@media (max-width: 480px) {
+    h1{
+        font-size: 1.5em;
+    }
+
+    nav ul{
+        padding-top: 10px;
+        text-align: left;
+    }
+    nav ul li{
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* For devices with screen width between 481px and 768px (Tablet) */
+
+@media (min-width: 481px ) and (max-width: 768px) {
+    .content{
+        background: #333;
+        color: white;
+        padding: 20px;
+    }
+}
+
+/* For devices with screen width above 768px (Desktop) */
+
+@media (min-width: 769px){
+    h2::after{
+        content: "!";
+    }
+}

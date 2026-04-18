@@ -1,0 +1,72 @@
+/* basic syntax */
+
+/* 
+
+selector {
+    property: value;
+} 
+
+*/
+
+h2 {
+    color: red;
+}
+
+/* p {
+    color: blue;
+} */
+
+
+/* element selector */
+
+div {
+    background-color: lime;
+    padding: 10px;
+}
+
+/* class selector */
+
+.highlight {
+ color: indigo;
+ font-size: 24px;
+}
+
+.text-content {
+    background-color: gold;
+    padding: 15px;
+}
+
+/* Id selector */
+
+#sub_heading {
+color: blueviolet;
+font-size: 24px;
+margin-top: 100px;
+}
+
+#my_custom_id{
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* group selector */
+
+ul li, ol li {
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* Combining Selector */
+
+header nav ul li {
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+   color: red;
+}

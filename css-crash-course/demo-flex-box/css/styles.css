@@ -1,0 +1,117 @@
+/* Resetting some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Product container - holds all product cards */
+.product-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 20px; 
+    padding: 10px;
+    max-width: 1200px; 
+}
+
+/* Product card styling */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 300px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Product image styling */
+.product-image img {
+    width: 100%;
+    height: 250px;
+}
+
+/* Product details styling */
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Product title styling */
+.product-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Product description styling */
+.product-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Allow description to grow */
+}
+
+/* Product price styling */
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2ecc71;
+    margin-bottom: 20px;
+}
+
+/* Buy Now button styling */
+.buy-now {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive layout for different screen sizes */
+@media (max-width: 1024px) {
+    .product-card {
+        width: 45%; /* 2 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 100%; /* 1 card per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%; /* 1 card per row, for very small screens */
+    }
+}

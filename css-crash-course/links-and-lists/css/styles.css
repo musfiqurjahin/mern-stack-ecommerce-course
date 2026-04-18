@@ -1,0 +1,50 @@
+li{
+    /* list-style-type: none; */
+    background-color: lightcyan;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+a:active{
+    color: blueviolet;
+}
+a:visited{
+    color: #5a2d8c;
+}
+
+ul.custom-bullets{
+    list-style-type: square;
+}
+
+ol.custom-number{
+    list-style-type: lower-greek;
+}
+
+ul.no-markers{
+    list-style: none; /* remove bullet points*/
+}
+
+ul.custom-icons{
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.custom-icons li {
+    padding-left: 24px;
+    background: url('https://cdn-icons-png.freepik.com/256/5610/5610944.png?semt=ais_hybrid') no-repeat left center;
+    background-size: 15px 15px;
+    margin: 10px 0;
+    text-align: left;
+}
